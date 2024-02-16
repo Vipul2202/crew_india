@@ -1,0 +1,89 @@
+.bg-custom-color {
+    background-color: #100025;
+}
+
+@media only screen and (max-width: 768px) {
+    .hidden-sm {
+      display: none;
+    }
+  }
+  .logo-moved {
+    transition: all 0.5s ease;
+    transform: translate(-50%, -50%) scale(0.8); 
+  }
+  .text-gradient {
+    background: linear-gradient(0deg, #6A85F1 0%, #C58AFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .nav-link {
+    position: relative;
+  }
+  
+  .nav-link:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 100%;
+    border-bottom: 2px solid;
+  }
+  .gradient-background-4{
+    background-image: linear-gradient(
+  345deg,
+  hsl(266deg 100% 7%) 68%,
+  hsl(280deg 59% 36%) 100%,
+  hsl(303deg 100% 50%) 100%
+);
+  }
+  .gradient-bg {
+    background: linear-gradient(45deg, #0026ff, #e52e71);
+    /* Adjust the colors and direction as needed */
+  }
+  .starry-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  @keyframes blink {
+    0%, 50%, 100% {
+      opacity: 1;
+    }
+    25%, 75% {
+      opacity: 0.5;
+    }
+  }
+  
+  .starry {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: blink 3s infinite;
+  }
+  
+  .starry:nth-child(2) {
+    left: 10%;
+    top: 20%;
+  }
+  
+  .starry:nth-child(3) {
+    left: 20%;
+    top: 40%;
+  }
+  
+
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,12 @@
+@keyframes reveal {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  .reveal-animation {
+    animation: reveal 3s forwards;
+  }
