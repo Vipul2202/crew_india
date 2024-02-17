@@ -29,15 +29,17 @@ const Cards = () => {
   return (
     <div className= "bg-blue-900 md:h-screen h-full flex flex-col justify-center items-center  flex-wrap  gradient-background">
     <div className="flex justify-center items-center flex-col">
-    <div className="text-center">
-     
-      <h1 className='text-white font-bold flex flex-col justify-center md:flex-row md:justify-start text-4xl'>
-      <div className="loader"></div><div className='lg:mb-12 md:mb-1 '></div>
+    <div className="text-center relative md:mt-7">
+    <h1 className='text-white font-bold flex flex-col justify-center md:flex-row md:justify-start text-4xl'>
+        <div className="loader absolute inset-y-0 left-0 md:static"></div>
+        <div className='lg:mb-12 md:mb-1'></div>
         <span>VOICE OF</span>
         <span className='text-gradient md:pl-2'>SATISFACTION</span>
-      </h1>
-      <p className='text-white text-md '>Unveiling the Power of Positive Experiences</p>
-    </div>
+    </h1>
+    <p className='text-white text-md'>Unveiling the Power of Positive Experiences</p>
+</div>
+
+
       
       <div className="  flex flex-wrap flex-row justify-start w-full  ">
         {cards.map((card, index) => (

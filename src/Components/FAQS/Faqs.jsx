@@ -71,10 +71,10 @@ const Faqs = () => {
       <div className="flex flex-col md:flex-row justify-center items-center py-4  md:py-4 mt-32" style={{ backgroundImage: `url(${ade})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: '' }}>
         <div className="w-full md:w-7/12 px-4">
           <h2 className="text-white font-bold text-3xl">YOUR QUERY</h2>
-          <header className="text-white text-5xl font-bold py-4">
+          <header className="text-white text-2xl font-bold py-4">
             <h1>FREQUENTLY ASKED </h1>
             <span className='text-gradient'>
-              <span className=''>QUESTIONS </span>
+              <span className='lg:text-4xl'>QUESTIONS </span>
             </span>
           </header>
           <section id="about" className="mb-8">
@@ -88,19 +88,21 @@ const Faqs = () => {
           </section>
         </div>
         <div>
-          {[1, 2, 3, 4, 5].map((index) => (
-            <div key={index} className="mb-4">
-              <select className="border-0 rounded-md p-2 pr-14 focus:outline-none text-white font-bold bg-transparent">
+  {[1, 2, 3, 4, 5].map((index, arrayIndex) => (
+    <div key={index} className="mb-4">
+      <select className="border-0 rounded-md p-2  focus:outline-none  text-gray-400 font-bold bg-transparent">
+        <option value="">
+          {arrayIndex === -1 ? "What is the program duration? 1, 2, 3, 4, 5" : "What is the program duration?"}
+        </option>
+        <option value="">How do I apply?</option>
+        <option value="">What support do you provide?</option>
+        <option value="">Do you take equity?</option>
+        <option value="">Can I apply with a team?</option>
+      </select>
+    </div>
+  ))}
+</div>
 
-                <option value="">What is the program duration? {index}</option>
-                <option value="">How do I apply?</option>
-                <option value="">What support do you provide?</option>
-                <option value="">Do you take equity?</option>
-                <option value="">Can I apply with a team?</option>
-              </select>
-            </div>
-          ))}
-        </div>
       </div>
 
 
@@ -119,38 +121,28 @@ const Faqs = () => {
 
 
         {/* Content */}
-        <div className="flex justify-start mt-8 h-[300px] w-[400px] md:w-auto pl-8">
-          <div className="flex flex-col justify-between pl-8">
-            <div className="flex items-center mb-2">
-              <FaEnvelope className="text-white mr-2" />
-              <div className="flex flex-col">
-                <h1 className="text-white font-bold mt-[3rem]">E-Mail</h1>
-                {/* <h2 className="text-white ">Send Your E-Mail id</h2> */}
-                <p className="text-white ">meet@bandhulbansal.com</p>
-              </div>
-            </div>
-
-            <div></div>
-            <div className="flex items-center mb-2">
-              <FaPhone className="text-white mr-2" />
-
-              <div className="flex flex-col">
-                <h2 className="text-white font-bold mt-[3rem] ">Phone</h2>
-                <h1 className="text-white ">Give us a call</h1>
-                <h2 className="text-white underline ">+91-123456789</h2>
-              </div>
-            </div>
-            <div className="flex items-center mb-2">
-              <FaMapMarker className="text-white mr-2" />
-
-              <div className="flex flex-col">
-                <h2 className="text-white font-bold mt-[3rem]">office</h2>
-                <h1 className="text-white ">Give us a call</h1>
-                <h2 className="text-white underline ">+91-123456789</h2>
-              </div>
-            </div>
-          </div>
+        <div className="w-full md:w-1/2 p-2"> {/* This div takes up 100% of the screen width on small screens and 50% on medium screens and above */}
+  <div className="flex flex-col md:flex-row justify-start mt-8 md:h-[300px] md:w-[400px] md:w-auto pl-8"> {/* Flex column on small screens and flex row on medium screens and above */}
+    <div className="flex flex-col justify-between md:pl-8"> {/* Indentation only on medium screens and above */}
+      <div className="flex items-center mb-2">
+        <FaEnvelope className="text-white mr-2" />
+        <div className="flex flex-col">
+          <h1 className="text-white font-bold mt-3 md:mt-0">E-Mail</h1> {/* Adjust margin top only on medium screens and above */}
+         
+          <p className="text-white ">meet@bandhulbansal.com</p>
         </div>
+      </div>
+  
+      <div className="flex items-center justify-center md:justify-start"> {/* Center alignment on small screens and left alignment on medium screens and above */}
+        <div>
+          <p className="text-white font-bold text-xl md:ml-4">ICP India Hub aims to create an environment where Developers, Start-Ups, and Blockchain enthusiasts can build and connect. </p> {/* Adjust margin left only on medium screens and above */}
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+
+
 
 
 

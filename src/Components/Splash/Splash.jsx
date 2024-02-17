@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import animated from '../../assets/animated.gif';
 import Scroll from '../../assets/Scroll.png';
+import './Splash.Css';
 
 const Splash = () => {
   const scrollRef = useRef(null);
@@ -63,17 +64,18 @@ const Splash = () => {
         transform: 'rotate(90%)',
       }}
     >
-      <div className="text-white text-center mt-44 mb-96">
-        <h1 className="text-6xl font-bold ">
-          Empowering Startups To <br /> Thrive In The{' '}
-          <span className="text-gradient">
-            <span className="pl-2" style={{
-              background: 'linear-gradient(90deg, #f48fb1, #6a1b9a)', 
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-            }}>INCUBATOR</span>
-          </span>
-        </h1>
+      <div className="text-white text-center mt-44 mb-96 fadeInUp">
+      <h1 className="lg:text-6xl  text:2xl font-bold ">
+  Empowering Startups To <br /> Thrive In The{' '}
+  <span className="text-gradient">
+    <span className="pl-2" style={{
+      background: 'linear-gradient(90deg, #f48fb1, #6a1b9a)', 
+      WebkitBackgroundClip: 'text',
+      WebkitTextFillColor: 'transparent',
+    }}>INCUBATOR</span>
+  </span>
+</h1>
+
         <div className="flex justify-center space-x-4 mt-16">
           <button
             className="bg-white font-bold text-black md:py-2 py-0 md:px-6 px-3 rounded-full transition duration-300 hover:bg-gradient-to-r hover:from-pink-600 hover:to-purple-700 hover:text-white hover:font-bold"

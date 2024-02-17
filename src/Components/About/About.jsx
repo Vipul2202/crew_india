@@ -9,8 +9,11 @@ const About = () => {
     <div className=" p-8 h-full gradient-background" >
       <div className="flex justify-center items-center mt-6">
           <div >
-            <p className="text-gray-300 text-lg">INNOVATE</p>
-            <h2 className="text-white text-3xl font-bold  py-4">MEET OUR 
+            <p className="text-gray-300 text-2xl font-bold">
+            <span className='text-gradient1'>
+            <span>INNOVATE</span> 
+            </span> </p>
+            <h2 className="text-white text-3xl font-bold  ">MEET OUR 
             <span className='text-gradient'>
             <span className='pl-2'>CO-FOUNDERS </span>
             </span></h2>

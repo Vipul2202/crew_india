@@ -1,30 +1,29 @@
 import React from 'react';
 import icp1 from '../../assets/icp1.png';
-// import logo8 from '../../assets/logo8.png';
 import Mask from '../../assets/Mask.png';
 import './Home.css';
-// import svg from '../../assets/sample.svg';
 
 const Home = () => {
   const isMobileOrTablet = window.innerWidth < 768;
+
   const handleLearnMoreClick = () => {
     window.open('https://internetcomputer.org/docs/current/developer-docs/getting-started/overview-of-icp', '_blank');
   };
 
-
   return (
     <div>
-      {/* Your other JSX code */}
       <hr className='' style={{ backgroundColor: '#1a0037', border: 'none', height: '2px' }} />
       <div className="content min-h-screen px-[10%] py-[4%] flex flex-col justify-between gradient-background-4">
         <div className="flex flex-col md:flex-row justify-center items-center py-4 md:py-4">
-          <div className="w-full md:w-7/12 px-4">
-            <div className="loader"></div>
-            <h2 className="text-white font-bold text-xl mb-6">ABOUT US</h2>
+          <div className="w-full md:w-7/12 px-4 fadeInUp">
+           
+            <h2 className="text-white font-bold text-xl text-gradient2">
+            
+              ABOUT US</h2>
             <header className="text-white text-5xl font-bold py-4">
-              <h1 className='mb-3'>EMPOWERING STARTUPS </h1>
+              <h1 className='mb-3 text-sm'>EMPOWERING STARTUPS </h1>
               <h1 className='mb-3'>TO ACHIEVE THEIR </h1>
-              <h1 className='text-gradient-to-br from-purple-700 via-purple-600 to-indigo-700'>
+              <h1 className='text-gradient-to-br sm:text:lg from-purple-700 via-purple-600 to-indigo-700'>
                 <span className='text-gradient'>
                   <span className='pl-2'>VISION</span>
                 </span>

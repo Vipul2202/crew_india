@@ -7,9 +7,9 @@ const Gallery = () => {
     <div className='h-full ' style={{ backgroundColor: '#100025' }}>
       <div className="text-center relative">
         <h3 className='text-white text-md font-bold highlights-word '>
-          <div className="loader1"></div><div className='lg:mb-12 md:mb-1 lg:pr-[20rem]'>HIGHLIGHTS</div>
+       <div className=' md:mb-1 lg:pr-[18rem] text-gradient2 text-xl'>HIGHLIGHTS</div>
         </h3>
-        <h1 className="text-white text-4xl font-bold mt-2">OUR GALLERY &<span className='text-gradient'>
+        <h1 className="text-white text-4xl font-bold">OUR GALLERY &<span className='text-gradient'>
           <span className='pl-2'>SESSION</span>
         </span></h1>
         <div className='flex justify-center py-10'>

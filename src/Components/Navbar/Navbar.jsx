@@ -32,7 +32,12 @@ const Navbar = () => {
           <a href="#testimonials" className="nav-link" style={fontStyle}>TESTIMONIALS</a>
           <a href="#faqs" className="nav-link" style={fontStyle}>FAQS</a>
         </div>
-        <button className="lg:hidden px-4 py-2 font-bold bg-purple-500  rounded-md" onClick={handleMenuClick}>{isOpen ? `Close` : `Menu`}</button>
+       <button className={`lg:hidden px-4 py-2 font-bold bg-purple-500 rounded-md text-white ${isOpen ? 'opacity-50' : 'hover:bg-purple-600'}`} onClick={handleMenuClick}>{isOpen ? `Close` : `Menu`}</button>
+
+
+
+
+
         <div className={`lg:hidden ${isOpen ? 'block' : 'hidden'}`}>
           <a href="#about" className="block py-2 px-4 text-white hover:text-gray-300" style={fontStyle}>ABOUT</a>
           <a href="/" className="block py-2 px-4 text-white hover:text-gray-300" style={fontStyle}>OUR TEAM</a>
